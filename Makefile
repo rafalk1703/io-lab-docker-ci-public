@@ -1,7 +1,7 @@
 # Git repo metadata
 TAG = $(shell git describe --tags --always)
 # TODO: if your docher hub account name is different then this on github ovrwrite this this variable with docer hub accout name
-PREFIX = $(shell git config --get remote.origin.url | tr ':.' '/'  | rev | cut -d '/' -f 3 | rev)
+PREFIX = 29659800
 # TODO: if your repository name is different then this github repository name on ovrwrite this variable with docer hub repo name
 REPO_NAME = $(shell git config --get remote.origin.url | tr ':.' '/'  | rev | cut -d '/' -f 2 | rev)
 
